@@ -20,6 +20,7 @@ test('поиск элемента по атрибуту', async ({ page }) => {
     await page.locator('[accessibility-id="submit-btn"]').click();
     await expect(page.locator('#welcome-txt')).toContainText('Привет');
 });
+length
 /*test('поиск элемента по классу', async ({ page }) => {
     // предусловие для теста
     await page.goto(URL);
