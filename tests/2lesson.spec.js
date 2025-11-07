@@ -29,7 +29,7 @@ test('поиск элемента по атрибуту', async ({ page }) => {
     await page.locator('[accessibility-id="submit-btn"]').click();
     await expect(page.locator('#welcome-txt')).toContainText('Привет');
 });*/
-test.only('поиск элемента по семантическим селекторам', async ({ page }) => {
+test('поиск элемента по семантическим селекторам', async ({ page }) => {
     // предусловие для теста
     await page.goto(URL);
     await page.getByPlaceholder('Email').fill('admin');
