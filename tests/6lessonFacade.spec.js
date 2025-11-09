@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 import { faker } from '@faker-js/faker';
 import {App} from '../src/pageFacade/app.page';
-import {UserBuilder} from '../src/builders/index';
+import {UserBuilder} from '../src/helpers/builders/index';
 
 const URL =  'https://realworld.qa.guru/';
 
@@ -16,7 +16,7 @@ const URL =  'https://realworld.qa.guru/';
         test.beforeEach( async ({ page }) => {
             await page.goto(URL);
         });
-        test.only("регистрация buldre", async ({ page }) => {
+        test("регистрация buldre", async ({ page }) => {
 
 
             const user = new UserBuilder()
