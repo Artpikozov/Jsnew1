@@ -1,7 +1,6 @@
-export class MainPage{
+export class GlobalFeedPage {
     constructor(page) {
         this.signUpButton = page.getByRole('link',{name: 'Sign up'});
-
 
     }
 

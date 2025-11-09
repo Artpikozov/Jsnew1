@@ -8,7 +8,7 @@ test.describe('Регистрация', () => {
         await page.goto(URL);
     });
 
-    test.only("регистрация", async ({ page }) => {
+    test("регистрация", async ({ page }) => {
 
         const user = {
             name: faker.person.fullName(),
