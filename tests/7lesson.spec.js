@@ -21,7 +21,7 @@ test.describe('Регистрация', () => {
 
         await webApp.main.gotoRegister();
         await webApp.register.register(user);
-        await webApp.globalfeed.gotoRegister();
+        await webApp.globalfeed.gotoRegister();ю
 
 
         //await expect(webApp.register.emailErrorText).toContaintext('Email already exists.. try logging in');
